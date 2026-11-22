@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BookNest | Books</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="site-header">
+
+        <nav class="navbar container">
+
+            <a class="logo" href="index.html">
+                <i class="fa-solid fa-book-open"></i>
+                BookNest
+            </a>
+
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                </li>
+
+                <li>
+                    <a class="active" href="books.html">
+                        <i class="fa-solid fa-book"></i> Books
+                    </a>
+                </li>
+
+                <li>
+                    <a href="categories.html">
+                        <i class="fa-solid fa-layer-group"></i> Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        <i class="fa-solid fa-circle-info"></i> About
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        <i class="fa-solid fa-envelope"></i> Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <a class="cart-link" href="books.html">
+                <i class="fa-solid fa-bag-shopping"></i>
+                Cart
+                <span id="cart-count">0</span>
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Page Banner -->
+        <section class="page-banner">
+
+            <div class="container">
+
+                <p class="eyebrow">
+                    The BookNest Collection
+                </p>
+
+                <h1>Explore Our Books</h1>
+
+                <p>
+                    Find something wonderful to read.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Books Section -->
+        <section class="section container">
+
+            <!-- Search and Filter -->
+            <div class="catalog-tools">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                    type="search"
+                    id="book-search"
+                    placeholder="Search by title or author..."
+                    aria-label="Search books">
+
+                </div>
+
+                <select id="category-filter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="Fiction">
+                        Fiction
+                    </option>
+
+                    <option value="Self-help">
+                        Self-help
+                    </option>
+
+                    <option value="Classic">
+                        Classic
+                    </option>
+
+                    <option value="Technology">
+                        Technology
+                    </option>
+
+                    <option value="Mystery">
+                        Mystery
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <p id="result-count" class="muted"></p>
+
+
+            <!-- Book Collection -->
+            <div class="book-grid" id="catalog">
+
+
+                <!-- Book 1 -->
+                <article class="book-card"
+                data-category="Fiction"
+                data-search="the midnight library matt haig">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?w=600"
+                    alt="The Midnight Library">
+
+                    <div class="book-info">
+
+                        <span class="book-category">
+                            Fiction
+                        </span>
+
+                        <h3>The Midnight Library</h3>
+
+                        <p>Matt Haig</p>
+
+                        <div class="book-bottom">
+
+                            <strong>Rs. 850</strong>
+
+                            <button
+                            class="small-btn add-cart"
+                            data-name="The Midnight Library"
+                            data-price="850">
+                                Add to cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Book 2 -->
+                <article class="book-card"
+                data-category="Self-help"
+                data-search="atomic habits james clear">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600"
+                    alt="Atomic Habits">
+
+                    <div class="book-info">
+
+                        <span class="book-category">
+                            Self-help
+                        </span>
+
+                        <h3>Atomic Habits</h3>
+
+                        <p>James Clear</p>
+
+                        <div class="book-bottom">
+
+                            <strong>Rs. 950</strong>
+
+                            <button
+                            class="small-btn add-cart"
+                            data-name="Atomic Habits"
+                            data-price="950">
+                                Add to cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Book 3 -->
+                <article class="book-card"
+                data-category="Classic"
+                data-search="little women louisa may alcott">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=600"
+                    alt="Little Women">
+
+                    <div class="book-info">
+
+                        <span class="book-category">
+                            Classic
+                        </span>
+
+                        <h3>Little Women</h3>
+
+                        <p>Louisa May Alcott</p>
+
+                        <div class="book-bottom">
+
+                            <strong>Rs. 700</strong>
+
+                            <button
+                            class="small-btn add-cart"
+                            data-name="Little Women"
+                            data-price="700">
+                                Add to cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Book 4 -->
+                <article class="book-card"
+                data-category="Technology"
+                data-search="javascript for beginners technology">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1532012197267-da84d127e765?w=600"
+                    alt="JavaScript Book">
+
+                    <div class="book-info">
+
+                        <span class="book-category">
+                            Technology
+                        </span>
+
+                        <h3>JavaScript for Beginners</h3>
+
+                        <p>Alex Carter</p>
+
+                        <div class="book-bottom">
+
+                            <strong>Rs. 1,100</strong>
+
+                            <button
+                            class="small-btn add-cart"
+                            data-name="JavaScript for Beginners"
+                            data-price="1100">
+                                Add to cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Book 5 -->
+                <article class="book-card"
+                data-category="Mystery"
+                data-search="the silent patient alex michaelides">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=600"
+                    alt="The Silent Patient">
+
+                    <div class="book-info">
+
+                        <span class="book-category">
+                            Mystery
+                        </span>
+
+                        <h3>The Silent Patient</h3>
+
+                        <p>Alex Michaelides</p>
+
+                        <div class="book-bottom">
+
+                            <strong>Rs. 900</strong>
+
+                            <button
+                            class="small-btn add-cart"
+                            data-name="The Silent Patient"
+                            data-price="900">
+                                Add to cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Book 6 -->
+                <article class="book-card"
+                data-category="Fiction"
+                data-search="the alchemist paulo coelho">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1513001900722-370f803f498d?w=600"
+                    alt="The Alchemist">
+
+                    <div class="book-info">
+
+                        <span class="book-category">
+                            Fiction
+                        </span>
+
+                        <h3>The Alchemist</h3>
+
+                        <p>Paulo Coelho</p>
+
+                        <div class="book-bottom">
+
+                            <strong>Rs. 780</strong>
+
+                            <button
+                            class="small-btn add-cart"
+                            data-name="The Alchemist"
+                            data-price="780">
+                                Add to cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- No Results Message -->
+            <p id="no-results" class="empty-state" hidden>
+                No books match your search.
+                Try another title or category.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-inner">
+
+            <a class="logo" href="index.html">
+                <i class="fa-solid fa-book-open"></i>
+                BookNest
+            </a>
+
+            <p>
+                © <span class="year"></span>
+                BookNest. Made for book lovers.
+            </p>
+
+            <div class="socials">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-facebook"></i>
+
+                <i class="fa-brands fa-pinterest"></i>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
